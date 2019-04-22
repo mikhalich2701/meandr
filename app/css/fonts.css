@@ -217,3 +217,13 @@
     font-weight: bold;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular.woff2') format('woff2'),
+         url('../fonts/roboto-regular.woff') format('woff'),
+         url('../fonts/roboto-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
