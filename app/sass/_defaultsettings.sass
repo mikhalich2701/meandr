@@ -1,0 +1,115 @@
+/*======================= Стартовые настройки ====================*/
+
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 0.3
+	font-size: 24px
+	letter-spacing: -0.01em
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 0.3
+	font-size: 24px
+	letter-spacing: -0.01em
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 0.3
+	font-size: 24px
+	letter-spacing: -0.01em
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 0.3
+	font-size: 24px
+	letter-spacing: -0.01em
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+html, body
+	margin: 0
+	padding: 0
+	height: 100%
+
+body
+	margin: 0
+	padding: 0
+	font-size: $p
+	min-width: 320px
+	position: relative
+	color: $maintext
+	font-family: $default-font
+	font-weight: normal
+	overflow-x: hidden
+	background:#E5E5E5
+
+.clearfix::after 
+  content: ""
+  display: table
+  clear: both
+
+::selection
+	color: #000
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
+	font-family: $default-font
+	//color: $maintext
+
+h1, .h1
+	font-size: $h1
+	font-weight: bold
+	font-family: $double-font
+	color: transparent
+	background-color: #666
+	background-clip: text
+	opacity: 0.3
+	text-shadow: 1px 1px 10px rgba(255,255,255,1)
+	+r(1400)
+		font-size: 165px
+	+r(1200)
+		font-size: 140px
+h2, .h2
+	font-size: $h2
+	font-weight: normal
+	letter-spacing: -0.02em	
+	+r(768)
+		font-size: 35px
+	+r(576)
+		font-size: 28px
+
+h3, .h3
+	font-size: $h3
+	font-weight: bold
+h4, .h4
+	color: $duobletext
+	font-size: $h4
+	text-transform: uppercase
+	font-weight: bold
+a
+	&:hover
+		text-decoration: none
+
+button, input, select, a, textarea
+	border: none
+	outline: none
+	cursor: pointer
+	&:active, &:focus
+		border: none
+		outline: nonergba(17, 38, 74, 0.2)
+	
+/*==============================ADD CLASS==============================*/
+
+.img-responsive
+	display: block
+	width: 100%
+	height: auto
